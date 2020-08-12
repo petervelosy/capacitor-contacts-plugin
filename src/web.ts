@@ -1,5 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
-import { CapContactsPlugin, PermissionStatus, Contact } from './definitions';
+import {CapContactsPlugin, PermissionStatus, Contact, MatchStatus} from './definitions';
 
 export class CapContactsWeb extends WebPlugin implements CapContactsPlugin {
   constructor() {
@@ -17,8 +17,13 @@ export class CapContactsWeb extends WebPlugin implements CapContactsPlugin {
     throw new Error('getContacts not available');
   }
 
+  async getContact(): Promise<Contact> {
+    throw new Error('getContact not available');
+  }
 
-
+  async contactsMatch(): Promise<MatchStatus> {
+    throw new Error('contactsMatch not available');
+  }
 
 }
 

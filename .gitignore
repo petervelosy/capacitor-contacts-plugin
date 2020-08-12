@@ -23,7 +23,9 @@ android/.settings
 android/.classpath
 android/.project
 
-/.idea
+.idea
+*.iml
+local.properties
 /.ionic
 /.sass-cache
 /.sourcemaps
